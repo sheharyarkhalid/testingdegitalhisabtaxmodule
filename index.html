@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/createcompany.css">
+    <link rel="stylesheet" type="text/css" href="css/all_created_parties_section.css">
+    <link rel="stylesheet" type="text/css" href="css/add_party_sale.css">
+    <link rel="stylesheet" type="text/css" href="css/viewsaleinvoice.css">
+    <link rel="stylesheet" type="text/css" href="css/report_inner_sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/report_pdf_preview.css">
+    <link rel="stylesheet" type="text/css" href="css/profit_loss_page.css">
+    <link rel="stylesheet" type="text/css" href="css/balance_sheet.css">
+    <link rel="stylesheet" type="text/css" href="css/home_dashboard.css">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    </head>
+<body>
+ 
+    <!-- header start  -->
+    <header>
+      
+           <div class="header_section">
+               <div class="header_sidebar_control">
+               <div class="header_sidebar_control_section">
+                  <div class="header_company_logo"><img src="image/download.png"></div>
+                  <div class="sidebar_controler_btn open_close_nav">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+               </div>
+               <div class="company_name"><p>DIGITAL HISAAB</p></div>
+               </div>
+
+               <div class="responsive_header_sidebar_control">
+                   <div class="sidebar_controler_btn open_close_nav">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </div>
+                </div>
+                <div class="responsive_header_logo">
+                    <div class="company_name"><p>DIGITAL HISAAB</p></div>
+                </div> 
+
+               <div class="header_details">
+                <div class="header_detail_section">
+                   
+                   <div class="header_login_details_section"> 
+                    <div class="header_login_details" data-toggle="modal" data-target="#CreateCompany"> 
+                        <figure><img src="image/login_img.png" /></figure>
+                        <p>Faisal Kabariya Store</p>
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                     
+                   </div> 
+                    <div class="responsive_header_login_details"> 
+                        <a type="button" id="comany_responsive_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                        
+                        </a>
+                        <div class="header_login_details_section_click_data  dropdown-menu" aria-labelledby="comany_responsive_dropdown">
+                            <div class="header_login_details" data-toggle="modal" data-target="#CreateCompany"> 
+                                <figure><img src="image/login_img.png" /></figure>
+                                <p>Faisal Kabariya Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+               </div>
+           </div>     
+    </header> 
+
+    <!-- header end -->
+
+    <!-- body start -->
+<section class="content_body_wrapper">
+   <div class="content_body_wrapper_container">
+      <div class="content_body_wrapper_main">
+
+
+<!-- home dashboard start -->
+<!-- 
+<section class="home_dashboard_section">
+
+ <div class="home_dashboard_card_one">
+   <div class="home_dashboard_card_one_detail">
+     <div class="dashboard_card_one_box">
+     <div class="dashboard_card_one_detail"><h4>Sale</h4></div>
+      <div class="dashboard_card_one_selector"><select><option>This Month</option></select></div>
+    </div>
+      <div class="dashboard_card_one_pricing">
+        <h3>RS  1,250</h3>
+        <span>Total sale(Sep)</span>
+      </div>
+      
+    </div>
+    <div class="home_dashboard_card_one_detail">
+      <div class="dashboard_card_one_box">
+      <div class="dashboard_card_one_detail"><h4>Expenses</h4></div>
+       <div class="dashboard_card_one_selector"><select><option>This Month</option></select></div>
+     </div>
+       <div class="dashboard_card_one_pricing">
+         <h3>RS  1,250</h3>
+         <span>Total Expenses(Sep)</span>
+       </div>
+       
+     </div>
+     <div class="home_dashboard_card_one_detail">
+      <div class="dashboard_card_one_box">
+      <div class="dashboard_card_one_detail"><h4>Purchase</h4></div>
+       <div class="dashboard_card_one_selector"><select><option>This Month</option></select></div>
+     </div>
+       <div class="dashboard_card_one_pricing">
+         <h3>RS  1,250</h3>
+         <span>Total Purchase(Sep)</span>
+       </div>
+       
+     </div>
+ </div>
+
+ <div class="home_dashboard_card_two">
+  <div class="home_dashboard_card_two_detail">
+     <div class="dashboard_card_two_pricing">
+      <span>you'll Receive</span>
+      <h3>RS  1,250</h3>
+     </div>
+     <div class="receive_amount_box_detail">
+       <div class="receive_amount_box">
+       <span>Asad</span>
+       <span class="receiveable_amount">90</span> 
+        </div>
+        <div class="receive_amount_box">
+          <span>Asad</span>
+          <span class="receiveable_amount">90</span> 
+           </div>
+      </div>
+     </div>
+
+     <div class="home_dashboard_card_two_detail">
+      <div class="dashboard_card_two_pricing">
+       <span>you'll pay</span>
+       <h3>RS  1,250</h3>
+      </div>
+      <div class="receive_amount_box_detail">
+        <div class="receive_amount_box">
+        <span>Asad</span>
+        <span class="payable_amount">90</span> 
+         </div>
+         <div class="receive_amount_box">
+           <span>Asad</span>
+           <span class="payable_amount">90</span> 
+            </div>
+       </div>
+      </div>
+   </div>
+   
+  
+</div>
+
+</section> -->
+
+<!-- home dashboard end -->
+
+
+
+<!-- partties detail start -->
+
+<section class="all_created_parties_section">
+    <div class="all_created_parties_inner_section">
+       <div class="single_part_detail">
+          <div class="search_add_party_btn_section">
+           <div class="search_add_party_btn">
+             <div class="search_party_btn">
+              <i class="far fa-search"></i>
+             </div>
+            <div class="add_party_btn">
+              <button data-toggle="modal" data-target="#createparty"><i class="fal fa-plus"></i> Add party</button>
+            </div>
+           </div>
+           <div class="add_party_search_field">
+            <span> <input type="search" id="search" placeholder="Search..." /><i class="fal fa-times"></i></span> 
+           </div>
+          </div>
+
+          <div class="single_party_data_table">
+            <table>
+          
+              <tbody>
+                <tr class="single_party_table_header">
+                  <th class="party_filter_box"><span>Party</span>
+                    <a class="dropdown-toggle single_party_filter" type="button" id="singlepartyfilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-filter"></i>
+                    <object>
+                    <div class="single_party_filter_do_action dropdown-menu" aria-labelledby="singlepartyfilter" >
+                      <form>
+                        <div class="party_filter_checkboxs">
+                          <div class="party_filter_checkbox">
+                            <input type="checkbox">
+                            <label>All</label>
+                          </div>
+                          <div class="party_filter_checkbox">
+                            <input type="checkbox">
+                            <label>To Receive</label>
+                          </div>
+                          <div class="party_filter_checkbox">
+                            <input type="checkbox">
+                            <label>To Pay</label>
+                          </div>
+                          <div class="party_filter_btns">
+                            <button>clear</button>
+                            <button>Apply</button>
+                          </div>
+                        </div>
+                      
+                    </form> 
+                    </div>
+                     </object>
+                    </a>
+                    </th>
+                  <th class="party_price_box">Amount</th>
+              </tr>
+  
+              <tr class="single_party_table_body">
+                 
+                  <td>Health Care Center</td>
+                  <td>100000$ 
+                    <div class="single_party_crud_action">
+                      <a class="dropdown-toggle single_party_crud" type="button" id="PartyDropDownMenuTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <i class="fas fa-ellipsis-v"></i> 
+                        <div class="single_party_crud_do_action dropdown-menu" aria-labelledby="PartyDropDownMenuTwo" >
+                         <a href="#"><i class="fas fa-eye"></i><span>View</span></a>
+                         <a><i class="fas fa-pen"></i><span>Edit</span></a>
+                         <a><i class="fas fa-trash-alt"></i><span>Delete</span></a>
+                        </div>
+                        
+                        </a>
+                     </div>
+                  </td>
+
+
+              </tr>
+               <tr class="single_party_table_body">
+                 
+                  <td>Health Care Center</td>
+                  <td>100000$ 
+ 
+                     <div class="single_party_crud_action">
+                      <a class="dropdown-toggle single_party_crud" type="button" id="PartyDropDownMenuTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <i class="fas fa-ellipsis-v"></i> 
+                        <div class="single_party_crud_do_action dropdown-menu" aria-labelledby="PartyDropDownMenuTwo" >
+                         <a href="#"><i class="fas fa-eye"></i><span>View</span></a>
+                         <a><i class="fas fa-pen"></i><span>Edit</span></a>
+                         <a><i class="fas fa-trash-alt"></i><span>Delete</span></a>
+                        </div>
+                        
+                        </a>
+                     </div>
+                    
+                  </td>
+              </tr>
+              
+              </tbody>
+            </table>
+          </div>
+       </div>
+    </div>
+    <div class="all_created_parties_inner_section_two">
+        <div class="parties_profile_data">
+         <div class="parties_profile_name_field"><h3>Name</h3></div> 
+         <div class="parties_profile_data_all_other_field">
+         <table>
+           <tr>
+             <td>Phone</td>
+             <td>03224565678</td>
+            </tr>
+           
+             <tr>
+              <td>Address</td>
+              <td>sufiabad colony street#5 houese#5 lahore</td>
+             </tr>
+             <tr>
+              <td>Email</td>
+              <td>admin@gmail.com</td>
+             </tr>
+            </table>
+         </div>
+        </div>
+        <div class="parties_transaction_table">
+           <div class="parties_transaction_table_header">
+             <h4>Transaction</h4>
+             <div class="parties_transaction_table_serarch"><i class="far fa-search"></i><input type="search" placeholder="search.."></div>
+           </div>
+
+           <div class="parties_transaction_table_box">
+            <table>
+              <tbody><tr class="table_header">
+                  <th>Type</th>
+                  <th>Number</th>
+                  <th>Date</th>
+                  <th>Total</th>
+                  <th>Balance</th>
+                  <th class="view_department_action">Actions</th>
+              </tr>
+  
+              <tr class="table_body">
+                 
+                  <td>Health Care Center</td>
+                  <td>+92224146567</td>
+                  <td>09/09/2002</td>
+                  <td>50000</td>
+                  <td>50000</td>
+                  <td>
+                         <div class="view_department_action_btn view_department_action">
+                           <button class="dropdown-toggle" type="button" id="PartyDropDownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </button>
+                            <div class="view_department_do_action dropdown-menu" aria-labelledby="PartyDropDownMenu" >
+                              <a href="#"><i class="fas fa-eye"></i><span>View</span></a>
+                              <a><i class="fas fa-pen"></i><span>Edit</span></a>
+                              <a><i class="fas fa-trash-alt"></i><span>Delete</span></a>
+                             </div> 
+                          </div>      
+                  </td>
+              </tr>      
+          </tbody>
+        </table>
+           </div>
+        </div>
+    </div>
+</section>
+
+<!-- parties detail end -->
+
+
+<!-- create sale invoice start -->
+
+<!-- <section class="add_customer_sale_section">
+  <div class="add_customer_sale_header">
+    <h5>Sale</h5>
+ 
+    <div class="nav add_customer_sale_header_property" id="myTab" role="tablist">                       
+      <a class="nav-link active" id="party-credit-tab" data-toggle="tab" href="#party-credit" role="tab" aria-controls="party-credit" aria-selected="true">Credit</a>
+      <a class="nav-link" id="party-cash-tab" data-toggle="tab" href="#party-cash" role="tab" aria-controls="party-cash" aria-selected="false">Cash</a>
+   </div>
+    
+  </div>
+
+  <div class="add_customer_sale_body_detail_one">
+    <div class="customer_sale_body_detail_box tab-content" id="myTabContent">
+      
+  <div class="tab-pane fade show active" id="party-credit" role="tabpanel" aria-labelledby="party-credit-tab">
+    
+    <div class="search_customer_in_sale">
+      <div class="create_company_section">
+          <div class="profile_name">
+            <div class="add_party_btn">
+              <button data-toggle="modal" data-target="#createparty"><i class="fal fa-plus"></i> Add party</button>
+            </div>
+          </div>
+          <div class="profile_name">
+            <label>Customer <span class="mandatory"> *</span></label>
+           <select class="customer_sale_body_select_field">
+            <option></option>
+          </select>
+          </div>
+      </div>
+       
+     </div>
+
+  </div>
+
+
+  <div class="tab-pane fade" id="party-cash" role="tabpanel" aria-labelledby="party-cash-tab">
+
+    <div class="add_party_btn add_party_cash_btn">
+      <button data-toggle="modal" data-target="#createparty"><i class="fal fa-plus"></i> Add party</button>
+    </div>
+    <div class="search_customer_in_sale">
+      
+      <div class="create_company_section">
+          <div class="profile_name">
+            <label>Customer <span class="Optional">  (Optional)</span></label>
+            <select>
+              <option></option>
+            </select>
+          </div>
+      </div>
+       <div class="create_company_section">
+         <div class="profile_name">
+           <label>Billing Name <span class="Optional">  (Optional)</span></label>
+           <input type="text" placeholder="">
+         </div>
+       </div>
+     </div>
+
+
+  </div>
+
+    </div>
+    <div class="customer_sale_body_detail_box">
+      <div class="create_company_section">
+        <div class="profile_name">
+          <label>Invoice Number <span></span></label>
+          <input type="number">
+        </div>
+        <div class="profile_name">
+          <label>Invoice Date <span></span></label>
+         <input type="date">
+        </div>
+    </div>
+     
+    </div>
+
+  </div>
+
+  <div class="parties_transaction_table_box customer_sale_product_list">
+  <form>  
+  <div class="parties_transaction_table_field">  
+    <table>
+      <tbody><tr class="table_header">
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Unit</th>
+          <th>Price/Unit</th>
+          <th>Amount</th>
+      </tr>
+
+      <tr class="table_body">
+         
+          <td><input type="text"></td>
+          <td><input type="number"></td>
+          <td><select ><option selected disabled>select unit</option></select></td>
+          <td><span>5000</span></td>
+          <td><span>5000</span></td>
+         
+      </tr>   
+      <tr class="table_body">
+         
+        <td><input type="text"></td>
+        <td><input type="number"></td>
+        <td><select ><option selected disabled>select unit</option></select></td>
+        <td><span>5000</span></td>
+          <td><span>5000</span></td>
+      </tr>      
+  </tbody>
+</table>
+</div>
+<div class="add_party_btn add_party_cash_btn">
+  <button><i class="fal fa-plus"></i> Add row</button>
+</div>
+
+<div class="customer_sale_total_calculation">
+  <div class="customer_sale_total_calculation_box">
+    <div class="create_company_section">
+      <div class="profile_name">
+        <label>Payment Type <span> </span></label>
+        <select>
+         <option></option>
+       </select>
+      </div>
+      <div class="profile_name">
+        <label>Add Description <span></span></label>
+       <textarea></textarea>
+      </div>
+  </div>
+  </div>
+  <div class="customer_sale_total_calculation_box">
+    <div class="create_company_section">
+      <div class="customer_sale_total_calculation_discount_box">
+        <label>Discount(%)</label>
+        <div class="customer_sale_total_calculation_discount_box_detail">
+          <input type="number"> 
+          <input type="number"> 
+        </div>  
+      </div>
+      <div class="customer_sale_total_calculation_price_box">
+      <div class="profile_name total_calculation_price_box">
+        <label>Total <span> </span></label>
+        <input type="number"> 
+      </div>
+      </div>
+      <div class="customer_sale_total_calculation_price_box">
+      <div class="profile_name total_calculation_price_box">
+        <label>Receive <span></span></label>
+        <input type="number"> 
+      </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary">Save</button>
+</div>
+
+</form>
+
+   </div>
+
+</section> -->
+<!-- create sale invoice end -->
+
+<!-- view sale invoice start -->
+ <!-- <section class="view_customer_sale_section">
+  
+
+  <div class="view_customer_sale_body_detail_one">
+    <div class="view_customer_sale_selection_fields">
+      <div class="view_customer_sale_selection_box">
+          <div class="customer_sale_single_selection_box">
+           <select>
+            <option></option>
+          </select>
+          </div>
+          <div class="customer_sale_single_between_selection_box">
+            <h6>Between</h6>
+            <input type="date">
+            <span>To</span>
+            <input type="date">
+           </div>
+      </div>
+      <div class="view_customer_sale_reports_box">
+        <a><i class="fas fa-chart-line"></i><span>Graph</span></a>
+        <a><i class="fas fa-file-excel"></i><span>Excel Report</span></a>
+        <a><i class="fas fa-print"></i><span>Print</span></a>
+      </div>
+      
+     </div>
+
+<div class="view_customer_sale_counting_field">
+<div class="view_customer_sale_counting_field_box">
+  <span>Paid</span>
+  <span>RS 4000</span>
+</div>
+<div class="view_customer_sale_counting_field_plus_box">
+  <i class="fal fa-plus"></i>
+</div>
+<div class="view_customer_sale_counting_field_box">
+  <span>Un Paid</span>
+  <span>RS 4000</span>
+</div>
+<div class="view_customer_sale_counting_field_plus_box">
+  <i class="fal fa-equals"></i>
+</div>
+<div class="view_customer_sale_counting_field_box">
+  <span>Total</span>
+  <span>RS 4000</span>
+</div>
+</div>
+    
+
+  </div>
+
+  <div class="view_customer_sale_product_invoice_list">
+
+    <div class="view_customer_sale_product_invoice_table_header"><span>TRANSACTIONS</span></div>
+    <div class="view_customer_sale_product_invoice_detail">
+      <div class="view_customer_sale_product_invoice_search_filter">
+        <div class="product_invoice_search_filter">
+          <i class="fal fa-search"></i>
+        <input type="search">
+        </div>
+      </div>
+    <div class="view_customer_sale_product_invoice_add_sale">
+      <button>Add Sale</button>
+    </div>  
+    </div>
+
+  <div class="view_customer_sale_product_invoice_table">  
+    <table>
+      <tbody>
+        <tr class="table_header">
+          <th>Date</th>
+          <th>Invoice No</th>
+          <th>Part Name</th>
+          <th>Payment Type</th>
+          <th>Amount</th>
+          <th>Balance Due</th>
+          <th>Action</th>
+      </tr>
+
+      <tr class="table_body">
+         
+          <td>12/3/2020</td>
+          <td>5000</td>
+          <td>shery</td>
+          <td>cash</td>
+          <td>5000</td>
+          <td>5000</td>
+          <td>
+            <div class="sale_invoice_action_btn">
+              <button class="dropdown-toggle" type="button" id="Sale_invoice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <i class="fas fa-ellipsis-v"></i> 
+              </button>
+               <div class="sale_invoice_do_action dropdown-menu" aria-labelledby="Sale_invoice" >
+                 <a><i class="fas fa-pen"></i><span>Edit</span></a>
+                 <a><i class="fas fa-trash-alt"></i><span>Delete</span></a>
+                </div> 
+             </div>
+          </td>
+         
+      </tr>   
+      <tr class="table_body">
+         
+        <td>12/3/2020</td>
+        <td>5000</td>
+        <td>shery</td>
+        <td>cash</td>
+        <td>5000</td>
+        <td>5000</td>
+        <td>
+          <div class="sale_invoice_action_btn">
+            <button class="dropdown-toggle" type="button" id="Sale_invoice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-ellipsis-v"></i> 
+            </button>
+             <div class="sale_invoice_do_action dropdown-menu" aria-labelledby="Sale_invoice" >
+               <a><i class="fas fa-pen"></i><span>Edit</span></a>
+               <a><i class="fas fa-trash-alt"></i><span>Delete</span></a>
+              </div> 
+           </div>
+        </td>
+      </tr>      
+  </tbody>
+</table>
+</div>
+   </div>
+
+</section>  -->
+<!-- view sale invoice end -->
+
+
+<!-- report sidebar start -->
+<!-- <section class="reports_body_section">
+
+  <section class="reports_inner_sidebar_section report_responsive_nav_bar">
+  
+  <div class="reports_inner_sidebar">
+   <h2>Transction Report</h2>
+   <div class="reports_inner_sidebar_list">
+     <a href="#">Sale</a>
+     <a href="#">Purchase</a>
+     <a href="#">Day Book</a>
+     <a href="#">All Transaction</a>
+     <a href="#">Profit And Loss</a>
+     <a href="#">Bill Wise Profit</a>
+     <a href="#">Cash Flow</a>
+     <a href="#">Balance Sheet</a>
+  
+   </div>
+  
+   <h2>party Report</h2>
+   <div class="reports_inner_sidebar_list">
+     <a href="#">Party statement</a>
+     <a href="#">party wise profit & loss</a>
+     <a href="#">all parties</a>
+     <a href="#">party report by item</a>
+     <a href="#">sale purchase by party</a>
+     <a href="#">sale purchase by party group</a>
+     <a href="#">Balance Sheet</a>
+  
+   </div>
+  </div>
+  
+    
+  </section>
+  
+  <div class="reports_body">
+  
+  </div>
+  
+  </section> -->
+<!-- report sidebar end -->
+
+
+
+
+<!-- report pdf invoice  start-->
+<!-- 
+<div class="sale_invoice_printing_page_section">  
+
+  <div class="sale_invoice_printing_page_box">
+      <div class="modal-header report_pdf_modal_header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Preview</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="sale_invoice_container">
+      <div class="modal-body">
+         
+        <div class="owner_detail_box">
+           <div class="owner_contact_box">
+             <h3>Faisal Store</h3>
+             <span>03024654567</span>
+             <span>Faisal@gmail.com</span>
+           </div>
+           <div class="owner_picture_box">
+             <figure><img src="image/login_img.png"></figure>
+           </div>
+        </div>
+                  
+            <div class="report_invoice_text"><span>Invoice</span></div>
+           
+            <div class="customer_contact_section">
+              <h6>Bill To :</h6>
+              <div class="customer_contact_box">
+                 <div class="customer_contact_info">
+                   <div class="customer_contact_fields"><span>Jazim</span></div>
+                    <div class="customer_contact_fields"><span>0324345678</span></div>
+                    <div class="customer_contact_fields"><span class="customer_address">House# 211</span></div>
+                 </div>
+                 <div class="customer_contact_info">
+                  <div class="customer_contact_fields"><span>Invoice No: 6</span></div>
+                   <div class="customer_contact_fields"><span>Date: 22/02/2021</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="customer_purchase_item_list">
+        
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Price/Unit</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>bread</td> 
+                  <td>100</td>
+                  <td>5000</td>
+                  <td> 500000</td>
+                </tr>
+                <tr>
+                  <td>bread</td> 
+                  <td>100</td>
+                  <td>5000</td>
+                  <td> 500000</td>
+                </tr>
+                <tr>
+                  <td>bread</td> 
+                  <td>100</td>
+                  <td>5000</td>
+                  <td>500000</td>
+                </tr>
+                <tr>
+                  <td>Total</td> 
+                  <td>10</td>
+                  <td></td>
+                  <td> 500000</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+
+     <div class="customer_invoice_amount_section">
+       <div class="customer_invoice_amount_in_word">
+         <div class="customer_invoice_amount_in_word_box">
+           <h4>invoice amount in words</h4>
+           <span>fifty thousand 5 hundred 30 rupees only </span>
+         </div>
+         <div class="customer_invoice_amount_in_word_box">
+          <h4>terms and conditions</h4>
+          <span>thanks for doing business with us! </span>
+        </div>
+       </div>
+       <div class="customer_invoice_total_amount">
+         <div class="customer_invoice_total_amount_box">
+           <span>subtotal</span>
+           <span>5000</span>
+         </div>
+         <div class="customer_invoice_total_amount_box total_color_box">
+          <span>Total</span>
+          <span>5000</span>
+        </div>
+        <div class="customer_invoice_total_amount_box">
+          <span>Received</span>
+          <span>5000</span>
+        </div>
+        <div class="customer_invoice_total_amount_box">
+          <span>Balance</span>
+          <span>5000</span>
+        </div>
+       </div>
+     </div>
+
+                         <div class="modal-footer report_pdf_modal_footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    
+      </div> 
+ </div>
+</div>
+</div>  -->
+<!-- report pdf invoice  end-->
+
+
+<!-- profit_and_loss_page start -->
+
+<!-- <div class="profit_loss_section">
+<div class="profit_loss_section_head">
+  <h3>Profit and loss report</h3>
+</div>
+<div class="profit_loss_report_box">
+  <div class="profit_loss_report_detail">
+    <span>Particulars</span>
+    <span>Amount</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>sale(+)</span>
+    <span class="profit_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>credit note(-)</span>
+    <span class="loss_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>purchase(-)</span>
+    <span class="loss_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>debit note(+)</span>
+    <span class="profit_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>direct expenses(-)</span>
+    <span class="loss_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail profit_loss_report_detail_child">
+    <span>other direct expenses(-)</span>
+    <span class="loss_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail profit_loss_report_detail_child">
+    <span>payment-in discount(-)</span>
+    <span class="loss_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>tax</span>
+    <span>RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail profit_loss_report_detail_child">
+    <span>tax payable(-)</span>
+    <span class="loss_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail profit_loss_report_detail_child">
+    <span>tax receivable(+)</span>
+    <span class="profit_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>opening stock(-)</span>
+    <span class="loss_report">RS 1000,00</span>
+  </div>
+  <div class="profit_loss_report_detail">
+    <span>closing stock(+)</span>
+    <span class="profit_report">RS 1000,00</span>
+  </div>
+</div>
+<div class="profit_loss_report_gross_profit">
+  <span>gross profit</span>
+  <span>RS 1000,00</span>
+</div>
+</div> -->
+
+
+<!-- profit_and_loss_page end -->
+
+<!-- report balance sheet start -->
+ <!-- <div class="balance_sheet_section">
+  <div class="balance_sheet_section_head">
+    <h3>balance sheet an on sep 17 2021</h3>
+  </div>
+  <div class="balance_sheet_boxes">
+  <div class="balance_sheet_report_box">
+    <div class="balance_sheet_report_detail balance_sheet_report_detail_head balance_sheet_report_detail_border">
+      <span>Assets</span>
+      <span>Amount</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span class="balance_sheet_report_main_point">Current Assets</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>credit note(-)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>purchase(-)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail balance_sheet_report_detail_head ">
+      <span>Assets Total</span>
+      <span>50000</span>
+    </div>
+  </div>
+
+  <div class="balance_sheet_report_box">
+    <div class="balance_sheet_report_detail balance_sheet_report_detail_head balance_sheet_report_detail_border">
+      <span>Assets</span>
+      <span>Amount</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span class="balance_sheet_report_main_point">Current Liabilites</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>credit note(-)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>purchase(-)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail">
+      <span>debit note(+)</span>
+      <span>RS 1000,00</span>
+    </div>
+    <div class="balance_sheet_report_detail balance_sheet_report_detail_head">
+      <span>Assets Total</span>
+      <span>50000</span>
+    </div>
+  </div>
+
+  </div>
+
+  </div>  -->
+
+<!-- report balance sheet end -->
+
+
+      </div>  
+   </div> 
+</section>
+
+<!-- report sidebar end -->
+
+<!-- body end -->
+
+<!-- sidebar start -->
+
+    <section class="sidebar_section responsive_nav_bar">
+      
+        <div class="sidebar_main_wrapper">
+        
+                  
+        <div class="sidebar_main_heading_section" id="accordionEx" role="tablist" aria-multiselectable="true">
+          
+            <div class="sidebar_heading_title">
+                 <a class="side_bar_single_sub_menu">
+                 <div class="logo_plus_sub_menu"><i class="fas fa-home"></i><span> Home</span></div>
+                </a>
+            </div>
+
+            <div class="sidebar_heading_title">
+                <a class="side_bar_single_sub_menu">
+                <div class="logo_plus_sub_menu"><i class="fas fa-user-friends"></i><span> Parties</span></div>
+                <div class="animated_icon" data-toggle="modal" data-target="#createparty"><i class="far fa-plus"></i></div>
+               </a>
+           </div>
+
+           <div class="sidebar_heading_title">
+            <a class="side_bar_single_sub_menu">
+            <div class="logo_plus_sub_menu"><i class="fas fa-shapes"></i><span> Items</span></div>
+            <div class="animated_icon"><i class="far fa-plus"></i></div>
+           </a>
+          </div>
+
+            <div class="sidebar_heading_title">
+                <div role="tab" id="headingSale">
+                 <a class="side_bar_single_sub_menu final" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSale" aria-expanded="true"
+                 aria-controls="collapseSale">
+                 <div class="logo_plus_sub_menu"><i class="fas fa-ballot-check"></i><span> Sale</span></div>
+                 <div class="animated_icon"> <i class="fas fa-angle-down rotate-icon"></i></div>
+                </a>
+                 </div>
+                 <div id="collapseSale" class="collapse " role="tabpanel" aria-labelledby="headingSale"
+                 data-parent="#accordionEx">
+                     <div class="sidebar_sub_child_menu_list">
+                         <a href="#">Sale Invoices</a>
+                         <a href="#">Estimation/ Quotation</a>
+                         <a href="#">Payment IN</a>
+                         <a href="#">Sale Order</a>
+                         <a href="#">Delivery Challan</a>
+                         <a href="#">Sale Return/ Cr. Note</a>
+                     </div>   
+               </div>
+      
+
+            </div>
+
+
+            <div class="sidebar_heading_title">
+                <div role="tab" id="headingPurchase">
+                 <a class="side_bar_single_sub_menu final" data-toggle="collapse" data-parent="#accordionEx" href="#collapsePurchase" aria-expanded="true"
+                 aria-controls="collapsePurchase">
+                 <div class="logo_plus_sub_menu"><i class="fas fa-shopping-cart"></i><span> Purchase</span></div>
+                 <div class="animated_icon"> <i class="fas fa-angle-down rotate-icon"></i></div>
+                </a>
+                 </div>
+                 <div id="collapsePurchase" class="collapse " role="tabpanel" aria-labelledby="headingPurchase"
+                 data-parent="#accordionEx">
+                     <div class="sidebar_sub_child_menu_list">
+                         <a href="#">Purchase Bills</a>
+                         <a href="#">Payment Out</a>
+                         <a href="#">Purchase Order</a>
+                         <a href="#">Purchase Return/ Dr. Note</a>
+                     </div>   
+               </div>
+      
+
+            </div>
+
+
+             <div class="sidebar_heading_title">
+                <a class="side_bar_single_sub_menu">
+                <div class="logo_plus_sub_menu"><i class="fas fa-wallet"></i><span> Expenses</span></div>
+                <div class="animated_icon"><i class="far fa-plus"></i></div>
+               </a>
+              </div>
+
+
+              <div class="sidebar_heading_title">
+                <div role="tab" id="headingCash&Bank">
+                 <a class="side_bar_single_sub_menu final" data-toggle="collapse" data-parent="#accordionEx" href="#collapseCash&Bank" aria-expanded="true"
+                 aria-controls="collapseCash&Bank">
+                 <div class="logo_plus_sub_menu"><i class="fas fa-shopping-cart"></i><span> Cash & Bank</span></div>
+                 <div class="animated_icon"> <i class="fas fa-angle-down rotate-icon"></i></div>
+                </a>
+                 </div>
+                 <div id="collapseCash&Bank" class="collapse " role="tabpanel" aria-labelledby="headingCash&Bank"
+                 data-parent="#accordionEx">
+                     <div class="sidebar_sub_child_menu_list">
+                         <a href="#">Cash In Hand</a>
+                         <a href="#">Cheques</a>
+                     </div>   
+               </div>
+            </div>
+
+
+            <div class="sidebar_heading_title">
+              <a class="side_bar_single_sub_menu">
+              <div class="logo_plus_sub_menu click_report" data-toggle="modal" data-target="#printinvoice"><i class="fas fa-chart-pie"></i><span> Reports</span></div>
+              <!-- <div class="animated_icon"><i class="far fa-plus"></i></div> -->
+             </a>
+            </div>
+
+            <div class="sidebar_heading_title">
+              <a href="Taxpage.html" class="side_bar_single_sub_menu">
+              <div class="logo_plus_sub_menu"><i class="fas fa-wallet"></i><span>Setting</span></div>
+              
+             </a>
+            </div>
+
+             </div>
+             
+        </div>
+
+    </section>
+
+
+<!-- sidebar end -->
+
+
+<!-- create company modal start -->
+  
+  <div class="modal fade" id="CreateCompany" tabindex="-1" role="dialog" aria-labelledby="CreateCompanyTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered create_company_container" role="document">
+      <div class="modal-content create_company_modal_content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Firm Detail</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           
+                      <form>
+                         <div class="create_company_form_fields"> 
+                            <div class="create_company_field">
+                               <div class="create_company_figure"> 
+                                <figure>
+                                  <img src="image/login_img.png">
+                                  <div class="change_pic">
+                                   <label> upload 
+                                 <input type="file" placeholder="change">
+                                    </label>
+                                  </div> 
+                                </figure>
+                                </div>
+                                <div class="create_company_section">
+                                  <div class="profile_name">
+                                    <label>Business Name <span class="mandatory"> *</span></label>
+                                    <input type="text" placeholder="">
+                                  </div>
+                                  <div class="profile_name">
+                                    <label>Phone No <span class="mandatory"> *</span></label>
+                                    <input type="number" placeholder="">
+                                  </div>
+                                  <div class="profile_name">
+                                    <label>Email <span class="Optional"> (Optional)</span></label>
+                                    <input type="email" placeholder="">
+                                  </div>
+                                </div>
+                              </div>
+    
+                          <div class="create_company_detail_box">
+                              <h5>Business Details</h5>
+                          </div>
+
+                          <div class="create_company_field">
+                            <div class="create_company_section">
+                                <div class="profile_name">
+                                  <label>Business Address <span class="Optional"> (Optional)</span></label>
+                                  <textarea></textarea>
+                                </div>
+                                <div class="profile_name">
+                                  <label>Business Description <span class="Optional"> (Optional)</span></label>
+                                  <textarea></textarea>
+                                </div>
+                            </div>
+                             <div class="create_company_section">
+                               <div class="profile_name">
+                                 <label>Business Type <span class="Optional">  (Optional)</span></label>
+                                 <input type="text" placeholder="">
+                               </div>
+                               <div class="profile_name">
+                                 <label>Business category <span class="Optional">  (Optional)</span></label>
+                                 <input type="number" placeholder="">
+                               </div>
+                               <div class="profile_name">
+                                  <figure class="signature_img">
+                                    <img src="image/download.png">
+                                    <div class="upload_signature">
+                                     <label> Add signature
+                                   <input type="file" placeholder="change">
+                                      </label>
+                                    </div> 
+                                  </figure>
+                               </div>
+                             </div>
+                           </div>
+
+
+                           <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                      
+                         </div> 
+                      </form>
+                
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+<!-- create company modal end -->
+
+
+
+
+<!-- create party modal start -->
+  
+<div class="modal fade" id="createparty" tabindex="-1" role="dialog" aria-labelledby="createpartyTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered create_company_container" role="document">
+    <div class="modal-content create_company_modal_content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Party</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         
+                    <form>
+                       <div class="create_company_form_fields"> 
+                        <div class="create_company_field">
+                          <div class="create_company_section">
+                              <div class="profile_name">
+                                <label>Party Name <span class="mandatory"> *</span></label>
+                                <input type="text" placeholder="">
+                              </div>
+                          </div>
+                           <div class="create_company_section">
+                             <div class="profile_name">
+                               <label>Phone No <span class="Optional">  (Optional)</span></label>
+                               <input type="text" placeholder="">
+                             </div>
+                           </div>
+                         </div>
+  
+
+                         <div class="nav create_part_detail_box" id="myTab" role="tablist">
+                         
+                            <a class="nav-link active" id="party-address-tab" data-toggle="tab" href="#party-address" role="tab" aria-controls="party-address" aria-selected="true">Address</a>
+                         
+                         
+                            <a class="nav-link" id="party-open-balance-tab" data-toggle="tab" href="#party-open-balance" role="tab" aria-controls="party-open-balance" aria-selected="false">Opening Balance</a>
+
+                         </div>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="party-address" role="tabpanel" aria-labelledby="party-address-tab">
+                            
+                            <div class="create_company_field fade show active">
+                              <div class="create_company_section">
+                                  <div class="profile_name">
+                                    <label>Billing Address <span class="Optional"> (Optional)</span></label>
+                                    <textarea></textarea>
+                                  </div>
+                                  <div class="profile_name">
+                                    <label>Email Id <span class="Optional"> (Optional)</span></label>
+                                   <input type="email">
+                                  </div>
+                              </div>
+                               
+                             </div>
+    
+                          </div>
+                          <div class="tab-pane fade" id="party-open-balance" role="tabpanel" aria-labelledby="party-open-balance-tab">
+
+                            <div class="create_company_field">
+                              <div class="create_company_section">
+                                  <div class="profile_name">
+                                    <label>Opening Balance <span class="Optional">  (Optional)</span></label>
+                                    <input type="number" placeholder="">
+                                  </div>
+                                  <div class="Opening_Balance_checkbox">
+                                   <div class="Opening_Balance_checkbox_detail">
+                                     <input type="radio" name="balance" value="topay">
+                                     <label>To Pay</label>
+                                   </div>
+                                   <div class="Opening_Balance_checkbox_detail">
+                                    <input type="radio" name="balance" value="toreceive">
+                                    <label>To Receive</label>
+                                  </div>
+                                  </div>
+                              </div>
+                               <div class="create_company_section">
+                                 <div class="profile_name">
+                                   <label>As of Date <span class="Optional">  (Optional)</span></label>
+                                   <input type="date" placeholder="">
+                                 </div>
+                               </div>
+                             </div>
+      
+
+                          </div>
+                          
+                        </div>
+
+                         
+
+                         <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    
+                       </div> 
+                    </form>
+              
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- create party modal end -->
+
+
+
+
+
+<script src="script/attendence_portal.js"></script>
+
+
+</body>
+</html>

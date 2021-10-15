@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/createcompany.css">
+    <link rel="stylesheet" type="text/css" href="css/all_created_parties_section.css">
+    <link rel="stylesheet" type="text/css" href="css/add_party_sale.css">
+    <link rel="stylesheet" type="text/css" href="css/viewsaleinvoice.css">
+    <link rel="stylesheet" type="text/css" href="css/report_inner_sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/report_pdf_preview.css">
+    <link rel="stylesheet" type="text/css" href="css/profit_loss_page.css">
+    <link rel="stylesheet" type="text/css" href="css/balance_sheet.css">
+    <link rel="stylesheet" type="text/css" href="css/home_dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/taxpage.css">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    </head>
+<body>
+ 
+   <section class="body"> 
+    <!-- header start  -->
+    <header>
+      
+           <div class="header_section">
+               <div class="header_sidebar_control">
+               <div class="header_sidebar_control_section">
+                  <div class="header_company_logo"><img src="image/download.png"></div>
+                  <div class="sidebar_controler_btn open_close_nav">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+               </div>
+               <div class="company_name"><p>DIGITAL HISAAB</p></div>
+               </div>
+
+               <div class="responsive_header_sidebar_control">
+                   <div class="sidebar_controler_btn open_close_nav">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </div>
+                </div>
+                <div class="responsive_header_logo">
+                    <div class="company_name"><p>DIGITAL HISAAB</p></div>
+                </div> 
+
+               <div class="header_details">
+                <div class="header_detail_section">
+                   
+                   <div class="header_login_details_section"> 
+                    <div class="header_login_details" data-toggle="modal" data-target="#CreateCompany"> 
+                        <figure><img src="image/login_img.png" /></figure>
+                        <p>Faisal Kabariya Store</p>
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                     
+                   </div> 
+                    <div class="responsive_header_login_details"> 
+                        <a type="button" id="comany_responsive_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                        
+                        </a>
+                        <div class="header_login_details_section_click_data  dropdown-menu" aria-labelledby="comany_responsive_dropdown">
+                            <div class="header_login_details" data-toggle="modal" data-target="#CreateCompany"> 
+                                <figure><img src="image/login_img.png" /></figure>
+                                <p>Faisal Kabariya Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+               </div>
+           </div>     
+    </header> 
+
+
+
+    <!-- body start -->
+    <section class="tax_body_wrapper">
+         <div class="content_body_wrapper_main">
+
+<section class="tax_section_screen">
+    <div class="tax_screen_container">
+    <div class="tax_section">    
+    <div class="tax_rates">
+        <div class="tax_rate_header">
+           <h5>tax rates</h5>
+           <i class="fas fa-plus" type="button" data-toggle="modal" data-target="#taxrate"></i>
+        </div>
+
+        <div class="tax_rate_list_section">
+         
+          <div class="tax_rate_list">
+                <div class="tax_name">
+                  <p>this is tax name</p>
+                </div>
+                <div class="tax_price_box">
+                    <span>555</span>
+                    <i class="fas fa-pencil-alt"  type="button" data-toggle="modal" data-target="#edittaxrate" ></i> 
+                    <i class="fas fa-trash-alt" type="button" data-toggle="modal" data-target="#deletetaxrate" ></i>
+                </div>
+            </div>
+
+            <div class="tax_rate_list">
+                <div class="tax_name">
+                  <p>this is tax name</p>
+                </div>
+                <div class="tax_price_box">
+                    <span>555</span>
+                    <i class="fas fa-pencil-alt"></i> 
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+    </div>
+    <div class="tax_rates">
+        <div class="tax_rate_header">
+           <h5>tax group</h5>
+           <i class="fas fa-plus" type="button" data-toggle="modal" data-target="#taxgroup"></i>
+        </div>
+
+        <div class="tax_rate_list_section">
+          <div class="tax_group_section"> 
+            <div class="tax_group_list">
+                <div class="tax_name">
+                  <p>this is taxgroup name</p>
+                </div>
+                <div class="tax_price_box">
+                    <span>555</span>
+                    <i class="fas fa-pencil-alt"  type="button" data-toggle="modal" data-target="#edittaxgroup" ></i> 
+                    <i class="fas fa-trash-alt" type="button" data-toggle="modal" data-target="#deletetaxgroup" ></i>
+                </div>
+            </div>
+            <div class="tax_rate_list_in_taxgroup">
+              <p>first tax rate</p>
+            </div>
+          </div>  
+
+          <div class="tax_group_section"> 
+            <div class="tax_group_list">
+                <div class="tax_name">
+                  <p>this is taxgroup name</p>
+                  
+                </div>
+                <div class="tax_price_box">
+                    <span>555</span>
+                    <i class="fas fa-pencil-alt"  type="button" data-toggle="modal" data-target="#edittaxgroup" ></i> 
+                    <i class="fas fa-trash-alt" type="button" data-toggle="modal" data-target="#deletetaxgroup" ></i>
+                </div>
+            </div>
+            <div class="tax_rate_list_in_taxgroup">
+              <p>first tax rate</p>
+              <p>first tax rate</p>
+              <p>first tax rate</p>
+              <p>first tax rate</p>
+              <p>first tax rate</p>
+              <p>first tax rate</p>
+              <p>first tax rate</p>
+              
+            </div>
+          </div>  
+
+            
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+</section>
+    
+
+
+         </div>
+    </section>     
+    <!-- body end -->
+
+<!-- sidebar start -->
+
+
+<section class="tax_sidebar_section tax_responsive_nav_bar">
+    
+      <div class="tax_sidebar_parent">
+     <div class="tax_sidebar_heading_heading">
+         <h3>Setting</h3>
+     </div>
+
+     <div class="tax_sidebar_list" id="tax_sidebar_list">
+         <a class="active_btn active" href="#">General</a>
+         <a class="active_btn " href="#">Transaction</a>
+         <a class="active_btn " href="#">print</a>
+         <a class="active_btn " href="#">taxes</a>
+         <a class="active_btn " href="#">User managment</a>
+         <a class="active_btn " href="#">party</a>
+         <a class="active_btn " href="#">item</a>
+     </div>
+
+     </div>
+</section>
+
+
+<!-- sidebar end -->
+
+<!-- all modals start-->
+
+<!--taxrate Modal start-->
+<div class="modal fade" id="taxrate" tabindex="-1" role="dialog" aria-labelledby="taxrateLabel" aria-hidden="true">
+    <div class="modal-dialog tax_modal_container" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tax Rate</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="tax_form_section">
+              <div class="tax_form_fields">
+                  <lable>Tax name</lable>
+                  <input type="text" />
+              </div>
+              <div class="tax_form_fields">
+                <lable>Rate</lable>
+                <input type="text" />
+            </div>
+            <div class="tax_form_fields">
+                <lable>tax type</lable>
+                <select>
+                    <option selected>other</option>
+                    <option selected>sgst</option>
+                    <option selected>cgst</option>
+                </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- taxrate Modal end -->
+
+
+<!-- edit taxrate Modal start-->
+<div class="modal fade" id="edittaxrate" tabindex="-1" role="dialog" aria-labelledby="edittaxrate" aria-hidden="true">
+    <div class="modal-dialog tax_modal_container" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tax Rate</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="tax_form_section">
+              <div class="tax_form_fields">
+                  <lable>Tax name</lable>
+                  <input type="text" />
+              </div>
+              <div class="tax_form_fields">
+                <lable>Rate</lable>
+                <input type="text" />
+            </div>
+            <div class="tax_form_fields">
+                <lable>tax type</lable>
+                <select>
+                    <option selected>other</option>
+                    <option selected>sgst</option>
+                    <option selected>cgst</option>
+                </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- edit taxrate Modal end -->
+
+
+
+<!-- delete taxrate Modal start-->
+<div class="modal fade" id="deletetaxrate" tabindex="-1" role="dialog" aria-labelledby="deletetaxrate" aria-hidden="true">
+    <div class="modal-dialog tax_modal_container" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tax Rate</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p class="delete_tax_rate_query">Do You Want to delete this tax rate ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- delete taxrate Modal end -->
+
+
+
+<!-- taxgroup Modal start-->
+<!-- <div class="modal fade" id="taxgroup" tabindex="-1" role="dialog" aria-labelledby="taxgroup" aria-hidden="true">
+    <div class="modal-dialog tax_modal_container" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tax group</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="tax_form_section">
+              <div class="tax_form_fields">
+                  <label>Enter Group name</label>
+                  <input type="text" />
+              </div>
+              <div class="tax_form_fields">
+                <label>select taxes</label>
+                <div class="create_tax_rate_section">
+                <div class="create_tax_rate_list">
+                    <div class="tax_name">
+                      <p>this is tax name</p>
+                    </div>
+                    <div class="tax_price_box">
+                        <span>555</span>
+                       <input type="checkbox" />
+                    </div>
+                </div>
+    
+              </div>
+            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+<!-- taxgroup Modal end -->
+
+
+
+
+
+
+
+
+<!--taxgroup Modal start-->
+<div class="modal fade" id="taxgroup" tabindex="-1" role="dialog" aria-labelledby="taxgroupLabel" aria-hidden="true">
+  <div class="modal-dialog tax_modal_container" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tax Group</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="tax_form_section">
+            <div class="tax_form_fields">
+                <lable>Enter Group name</lable>
+                <input type="text" />
+            </div>
+          <div class="tax_form_fields">
+            <label>select taxes</label>
+            <div class="create_tax_rate_section">
+            <div class="create_tax_rate_list">
+                <div class="tax_name">
+                  <p>this is tax name</p>
+                </div>
+                <div class="tax_price_box">
+                    <span>555</span>
+                   <input type="checkbox" />
+                </div>
+            </div>
+
+          </div>
+        
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- taxgroup Modal end -->
+
+
+<!-- edit taxgroup Modal start-->
+<div class="modal fade" id="edittaxgroup" tabindex="-1" role="dialog" aria-labelledby="edittaxgroup" aria-hidden="true">
+  <div class="modal-dialog tax_modal_container" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tax Group</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="tax_form_section">
+          <div class="tax_form_fields">
+              <lable>Enter Group name</lable>
+              <input type="text" />
+          </div>
+        <div class="tax_form_fields">
+          <label>select taxes</label>
+          <div class="create_tax_rate_section">
+          <div class="create_tax_rate_list">
+              <div class="tax_name">
+                <p>this is tax name</p>
+              </div>
+              <div class="tax_price_box">
+                  <span>555</span>
+                 <input type="checkbox" />
+              </div>
+          </div>
+
+        </div>
+      
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- edit taxgroup Modal end -->
+
+
+
+<!-- delete taxgroup Modal start-->
+<div class="modal fade" id="deletetaxgroup" tabindex="-1" role="dialog" aria-labelledby="deletetaxgroup" aria-hidden="true">
+  <div class="modal-dialog tax_modal_container" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tax group</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p class="delete_tax_rate_query">Do You Want to delete this tax group ?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- delete taxgroup Modal end -->
+
+
+
+
+
+<!-- all modals end -->
+
+</section>
+
+
+
+
+
+
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("tax_sidebar_list");
+    var btns = header.getElementsByClassName("active_btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+
+<script>
+     $('.open_close_nav').click(function(){
+      $('.tax_responsive_nav_bar').toggleClass('tax_responsive_bar');
+      });
+    
+</script>
+
+
+<script src="script/attendence_portal.js"></script>
+</body>
+</html>
